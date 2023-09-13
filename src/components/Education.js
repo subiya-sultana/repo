@@ -3,17 +3,68 @@ import React from 'react'
 export default function Education() {
   return (
     <div className='education'>
-      <pre>&lt; About /&gt;</pre>
-      <h1>WHO I AM?</h1>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-      <div className='home-right'>
-         
-              <button data-aos="flip-left" data-aos-duration="2000">Download Resume 
-              </button>
-              <button data-aos="flip-left" data-aos-duration="2000">Explore About Me 
-              </button>
-            
-            </div>
+      <pre className='sub-title'>&lt; Education /&gt;</pre>
+      <h1 className='glitch title'>WHAT I STUDY?</h1>
+      <div className='timeline' >
+        <div className='container left-container' >
+        <span className='circle'></span>
+          <div className='text-box box-left' data-aos="fade-down" data-aos-duration="1500">
+            <small>2020 - 2023 (3 years)</small>
+            <h1>Diploma</h1>
+            <p className='text-style'>
+            college:  QULI QUTUB SHAH GOVT. POLYTECHNIQ whaterver andever<br/> 
+            course: computer science <br/> 
+            board: sbtet <br/> 
+            Gpa: 9.3<br/> 
+            lorem 
+            </p>
+            <span className='left-container-arrow'></span>
+          </div>
+        </div>
+        <div className='container right-container'>
+        <span className='circle'></span>
+          <div className='text-box box-right' data-aos="fade-down" data-aos-duration="1500">
+            <small>2020 - 2023 (3 years)</small>
+            <h1>Diploma</h1>
+            <p className='text-style'>
+            college:  QULI QUTUB SHAH GOVT. POLYTECHNIQU<br/> 
+            course: computer science <br/> 
+            board: sbtet <br/> 
+            Gpa: 9.3<br/> 
+            </p>
+            <span className='right-container-arrow'></span>
+          </div>
+        </div>
+        <div className='container left-container'>
+        <span className='circle'></span>
+          <div className='text-box box-left' data-aos="fade-down" data-aos-duration="1500" >
+            <small>2020 - 2023 (3 years)</small>
+            <h1>Diploma</h1>
+            <p className='text-style'>
+            college:  QULI QUTUB SHAH GOVT. POLYTECHNIQ and bla<br/> 
+            course: computer science <br/> 
+            board: sbtet <br/> 
+            Gpa: 9.3<br/> 
+            </p>
+            <span className='left-container-arrow'></span>
+          </div>
+        </div>
+        <div className='container right-container'>
+          <span className='circle'></span>
+          <div className='text-box box-right' data-aos="fade-down" data-aos-duration="1500">
+            <small>2020 - 2023 (3 years)</small>
+            <h1>Diploma</h1>
+            <p className='text-style'>
+            college:  QULI QUTUB SHAH GOVT. POLYTECHNIQU<br/> 
+            course: computer science <br/> 
+            board: sbtet <br/> 
+            Gpa: 9.3<br/> 
+            </p>
+            <span className='right-container-arrow'></span>
+          </div>
+        </div>
+      </div>
+
     </div>
     
   )

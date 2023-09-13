@@ -11,7 +11,7 @@ export default function Home() {
         <div className="overlay"></div>
         <div className="home-content" >
             <div className='home-left' data-aos="fade-down-right" data-aos-duration="2000"> 
-                <h1 >Hello, I am <span>Subiya Sultana.</span></h1>
+                <h1 >Hello, I am <span  className='glitch'>Subiya Sultana.</span></h1>
                 <h1 data-aos="fade-left" data-aos-duration="2000">And I build Interactive websites.</h1>
                 <p>View My Work <FontAwesomeIcon className='icon' icon={faAngleDown} /></p>
             </div>

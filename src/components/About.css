@@ -1,0 +1,22 @@
+/* about css */
+.about{
+   background-color:  var(--bg-light);
+   color: white;
+   text-align: center;
+   padding: 5% 8%;
+   /* border: 2px solid hotpink; */
+}
+
+
+.btn{
+width: 220px;
+padding: 8px;
+margin: 8px;
+font-size: 16px;
+font-weight: 700;
+cursor: pointer;
+color: var(--secondary-color);
+/* background-color: #00ff00; */
+background-color: #ff0000;
+border: none;
+}

@@ -1,0 +1,192 @@
+:root{
+  --primary-color:  #12ffac;
+  /* --primary-color:  #5f6; */
+  /* --primary-color: #00ff00; */
+  /* --primary-color: #00ec00; */
+  --secondary-color: #f57c03;
+}
+.App-header {
+  height: 100vh;
+  width: 100vw;
+}
+video{
+  width: 100%;
+  height: 99%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* border: 4px solid pink; */
+}
+.overlay{
+  width: 100%;
+  min-Height: 99%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.home-content{
+  width: 100%;
+  min-Height: 99%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  overflow: hidden;
+}
+.home-left{
+  text-align: left;
+  min-height: 200px;
+  padding-left: 20px;
+}
+.home-left h1{
+  font-size: 40px;
+  font-family: 'times new roman';
+  line-height: 1.4;
+}
+.home-left span{
+  color: var(--secondary-color);
+  font-family: 'Rubik', sans-serif;
+  font-weight: lighter;
+  word-spacing: 4px;
+}
+.home-left span:hover{
+  /* transition: all .4s ease; */
+  font-family: 'Rubik Glitch', cursive;
+  font-style: oblique;
+  cursor: none;
+  animation: glitchEffect 1.5s infinite;
+}
+@keyframes glitchEffect{
+  0% {
+    font-family: 'Rubik Glitch', cursive;
+    font-style: normal;
+  }
+  45%{
+    font-family: 'Rubik Glitch', cursive;
+    font-style: normal;
+  }
+  60%{
+    font-family: 'Rubik Glitch', cursive;
+    font-style: italic;
+  }
+  75%{
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+  }
+  100% {
+    font-family: 'Rubik Glitch', cursive;
+    font-style: normal;
+  }
+}
+.home-left p{
+  margin-top: 50px;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+.home-right{
+  /* border: 1px solid yellow; */
+  text-align: center;
+  width: 30%;
+  min-height: 200px;
+}
+.home-right button{
+  width: 220px;
+  padding: 8px;
+  margin: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--secondary-color);
+  background-color: transparent;
+  border: 2px solid var(--secondary-color);
+}
+.home-right button:first-child{
+  margin-top: 10px;
+}
+.home-right button .icon{
+  padding-left: 5px;
+}
+.home-right button:hover, .home-right button:active{
+  color: white;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  transition: 1s;
+}
+.home-right button:hover .icon{
+  transform: rotate(90deg);
+  transition: 0.75s;
+
+}
+
+/* about css */
+.about{
+  /* background-color:  #1c3c2c; */
+ /* background-color: #12271c; */
+ background-color:  #0e1f17;
+ color: white;
+}
+.btn{
+  width: 220px;
+  padding: 8px;
+  margin: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--secondary-color);
+  /* background-color: #00ff00; */
+  background-color: #ff0000;
+  border: none;
+}
+.about h1, .education h1{
+  color: #00ff00;
+}
+.education{
+  /* background-color:  #152e22; */
+  background-color: #08120d;
+  color: #f57c03;
+}
+
+
+
+
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (max-width: 900px){
+
+}
+/* Media Query for low resolution  Tablets, Ipads */
+@media (max-width: 777px) {
+  .home-content{
+    flex-direction: column;
+  }
+  .home-left{
+    min-height: 200px;
+    padding: 70px 15px 0px 15px;
+  }
+  .home-right{
+    width: auto;
+    min-height: 200px;
+  }
+  .home-right button:first-child{
+    margin-top: 20%;
+  }
+}
+/* Media Query for Mobile Devices */
+@media (max-width: 550px) {
+  .home-left h1{
+    font-size: 28px;
+  }
+  
+}
+/* smallest breakpoint */
+@media (max-width: 280px) {
+  body{
+    overflow: auto;
+  }
+}

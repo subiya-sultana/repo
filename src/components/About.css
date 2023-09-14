@@ -1,10 +1,24 @@
 /* about css */
 .about{
+   /* position: absolute; */
    background-color:  var(--bg-light);
+   display: block;
    color: white;
    text-align: center;
    padding: 5% 8%;
+   z-index: 5;
    /* border: 2px solid hotpink; */
+}
+.about p{
+   margin: 4px;
+}
+.about p:hover{
+/* background: rgba(255, 255, 255, 0.1);
+border-radius: 15px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(15px);
+-webkit-backdrop-filter: blur(15px);
+border: 1px solid rgba(255, 255, 255, 0.1); */
 }
 
 

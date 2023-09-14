@@ -2,14 +2,12 @@
   background-color: var(--bg-dark);
   color: white;
   padding: 5% 8%;
-  /* border: 2px solid fuchsia; */
 }
 .education .timeline{
-  /* background-color: aqua; */
   position: relative;
   z-index: 1;
 }
-.timeline::after{
+.education .timeline::after{
   content: "";
   position: absolute;
   top: 0;
@@ -31,80 +29,7 @@
     opacity: 1;
   }
 }
-.education .container{
-  /* background-color: pink; */
-  z-index: 2;
-  position: relative;
-  overflow: visible;
-  width: 50%; 
-  box-sizing: border-box;
-  
-}
-.container.left-container{
-  left: 0;
-  padding: 10px 40px;
-}
-.container.right-container{
-  left: 50%;
-  padding: 10px 34px;
-}
-.container .text-box{
-  background-color: var(--bg-light);
-  /* margin: 10px 20px; */
-  padding: 20px;
-  position: relative;
-  overflow: visible;
-
-  /* border: 2px solid var(--primary-color); */
-  border: double 3px transparent;
-  border-radius: 8px;
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-}
-.text-box small{
-  color: var(--primary-color);
-}
-
-/* .text-box.box-left{
-  background-image: linear-gradient(var(--bg-light), var(--bg-light)), radial-gradient(circle at bottom left, var(--primary-color),var(--primary-color), transparent);
-  box-shadow: 1px 0px 10px 0px var(--primary-color);
-}
-.container .text-box.box-left:hover{
-  background-image: linear-gradient(var(--bg-dark), var(--bg-dark)), radial-gradient(circle at bottom left, var(--primary-color),var(--primary-color), transparent);
-  color: aqua;
-}
-.text-box.box-right{
-  background-image: linear-gradient(var(--bg-light), var(--bg-light)), radial-gradient(circle at top left, transparent, var(--primary-color),var(--primary-color));
-  box-shadow: -1px 0px 10px 0px var(--primary-color);
-}
-.container .text-box.box-right:hover{
-  background-image: linear-gradient(var(--bg-light), var(--bg-light)), radial-gradient(circle at bottom left, var(--primary-color),var(--primary-color), transparent);
-  color: aqua;
-} */
-.left-container-arrow{
-
-  position: absolute;
-  top: 30px;
-  right: -28px;
-  z-index: 1;
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-left: 15px solid var(--bg-light);
-  /* border: 2px solid var(--primary-color); */
-}
-.right-container-arrow{
-  position: absolute;
-  top: 30px;
-  left: -28px;
-  z-index: 1;
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  border-left: 15px solid transparent;
-  border-right: 15px solid var(--bg-light);
-}
-.container .circle{
-  
+.education .container .circle{
   position: absolute;
   width: 15px;
   height: 15px;
@@ -115,8 +40,68 @@
   right: -8px;
   z-index: 10;
 }
-.right-container .circle{
+.education .right-container .circle{
   top: 43px;
   left: -15px;
-
 }
+.education .container{
+  z-index: 2;
+  position: relative;
+  overflow: visible;
+  width: 50%; 
+  box-sizing: border-box;
+}
+.education .container.left-container{
+  left: 0;
+  padding: 10px 40px;
+}
+.education .container.right-container{
+  left: 50%;
+  padding: 10px 34px;
+}
+.education .container .text-box{
+  background-color: var(--bg-light);
+  padding: 20px;
+  position: relative;
+  overflow: visible;
+  border-radius: 8px;
+  background-origin: border-box;
+}
+.education .text-box:after {
+  position: absolute;
+  content: '';
+  width: 99%;
+  height: 100%; 
+  top: 0;
+  left:0;
+  border-radius: 8px;
+  box-shadow: 1px 0px 10px 3px var(--primary-light);
+  z-index: -1;
+}
+.education .text-box small{
+  color: var(--primary-color);
+}
+.education .text-box h1{
+  padding-bottom: 15px;
+}
+.education .left-container-arrow{
+  position: absolute;
+  top: 30px;
+  right: -28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-left: 15px solid var(--bg-light);
+}
+.education .right-container-arrow{
+  position: absolute;
+  top: 30px;
+  left: -28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid transparent;
+  border-right: 15px solid var(--bg-light);
+}
+

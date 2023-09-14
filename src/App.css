@@ -1,6 +1,11 @@
+@import "./components/Navbar.css";
 @import "./components/Home.css";
 @import "./components/About.css";
 @import "./components/Education.css";
+@import "./components/Skills.css";
+@import "./components/Projects.css";
+@import "./components/Contact.css";
+
 
 .sub-title {
   color: var(--secondary-color);
@@ -16,7 +21,7 @@
 }
 .text-style {
   overflow: hidden;
-  line-height: 20px;
+  line-height: 24px;
   font-size: 18px;
   margin-bottom: 8px;
 }
@@ -63,6 +68,7 @@
 
 /* Media Query for low resolution  Tablets, Ipads */
 @media (max-width: 777px) {
+ 
   .home-content {
     flex-direction: column;
   }
@@ -81,11 +87,10 @@
   .education {
     padding: 5% 2%;
   }
-  .container.left-container {
+  .education  .container.left-container {
     padding: 10px 40px 10px 0px;
   }
-
-  .container.right-container {
+  .education .container.right-container {
     padding: 10px 0px 10px 40px;
   }
 }
@@ -105,7 +110,7 @@
     padding: 5%;
   }
 
-  .timeline::after {
+  .education .timeline::after {
     left: 15px;
   }
 
@@ -113,18 +118,17 @@
     width: 100%;
   }
 
-  .container.left-container {
+  .education .container.left-container {
     left: 0;
     padding: 10px 2px 10px 40px;
     
   }
 
-  .container.right-container {
+  .education .container.right-container {
     left: 0;
     padding: 10px 2px 10px 40px;
   }
-
-  .container .text-box {
+  .education .container .text-box {
     background-color: var(--bg-light);
     /* margin: 10px 20px; */
     padding: 20px;
@@ -138,34 +142,30 @@
     background-clip: padding-box, border-box;
   }
 
-  .text-box small {
-    color: var(--primary-color);
-  }
-
-  .right-container .circle,
-  .left-container .circle {
+  .education .right-container .circle,
+  .education .left-container .circle {
     top: 43px;
     left: 1px;
   }
 
-  .left-container-arrow,
-  .right-container-arrow {
+  .education .left-container-arrow,
+  .education .right-container-arrow {
     position: absolute;
     top: 28;
     right: 100%;
-    z-index: 1;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-left: 15px solid transparent;
-    border-right: 15px solid var(--bg-light);
-
-    /* border: 2px solid var(--primary-color); */
   }
 }
 
 /* smallest breakpoint */
 @media (max-width: 280px) {
   body {
+    overflow: auto;
+  }
+  .home-right button{
+    width: 180px;
+  }
+  .text-box h1{
+    font-size: 26px;
     overflow: auto;
   }
 }

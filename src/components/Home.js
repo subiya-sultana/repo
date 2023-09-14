@@ -1,7 +1,7 @@
 import React from 'react';
-import homeBg from '../assets/homeBg.mp4'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight, faAngleDown } from '@fortawesome/free-solid-svg-icons'
+import homeBg from '../assets/homeBg.mp4';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight, faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 
 export default function Home() {

@@ -47,6 +47,8 @@ video {
 .home-left span{
   color: var(--secondary-color);
   word-spacing: 3px;
+  display: inline-block;
+
 }
 .home-left p{
   margin-top: 40px;

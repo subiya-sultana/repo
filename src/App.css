@@ -14,16 +14,19 @@
   opacity: 0.7;
   text-align: center;
 }
+
 .title {
   padding: 5px 0 25px 0;
   color: var(--primary-color);
   text-align: center;
+  width: fit-content;
+  margin: auto;
 }
+
 .text-style {
   overflow: hidden;
   line-height: 24px;
   font-size: 18px;
-  margin-bottom: 8px;
 }
 
 /* Text glich effect */
@@ -31,31 +34,38 @@
   font-family: "Rubik", sans-serif;
   font-weight: lighter;
 }
+
 .glitch:hover {
   font-family: "Rubik Glitch", cursive;
   cursor: none;
-  animation: glitchEffect 1.5s infinite;
+  animation: glitchEffect 1s infinite;
 }
 @keyframes glitchEffect {
   0% {
-    font-family: "Rubik Glitch", cursive;
-    font-style: normal;
+    transform: translateX(0);
+    cursor: wait;
   }
-  45% {
-    font-family: "Rubik Glitch", cursive;
-    font-style: normal;
+  10%,90% {
+    transform: translateX(-0.2px);
+    transform: skew(-10deg);
   }
-  60% {
-    font-family: "Rubik Glitch", cursive;
-    font-style: italic;
+  20%,80% {
+    transform: translateX(-2px);
+    cursor: wait;
   }
-  75% {
-    font-family: "Rubik", sans-serif;
-    font-style: normal;
+  30%,50%,70% {
+    transform: translateX(-0.1px);
+    transform: translateY(0px);
+  }
+  40%,60% {
+    transform: translateX(0px);
+    transform: translateY(1px);
+    cursor: context-menu;
+
   }
   100% {
-    font-family: "Rubik Glitch", cursive;
-    font-style: normal;
+    transform: translateX(0);
+    transform: translateY(0px);
   }
 }
 
@@ -68,39 +78,58 @@
 
 /* Media Query for low resolution  Tablets, Ipads */
 @media (max-width: 777px) {
- 
+
   .home-content {
     flex-direction: column;
   }
+
   .home-left {
     min-height: 200px;
     padding: 70px 15px 0px 15px;
     padding-left: 10%;
   }
+
   .home-right {
     width: auto;
     min-height: 200px;
   }
+
   .home-right button:first-child {
     margin-top: 20%;
   }
-  .education {
+
+  .about {
+    text-align: justify;
     padding: 5% 2%;
+
   }
-  .education  .container.left-container {
-    padding: 10px 40px 10px 0px;
+
+  .about .about-content {
+    width: 90%;
   }
-  .education .container.right-container {
-    padding: 10px 0px 10px 40px;
-  }
+
   .skills {
     padding: 5% 2%;
   }
+
   .skills .tab-header {
     width: 90%;
   }
-  .skills .container{
+
+  .skills .container {
     width: 90%;
+  }
+
+  .education {
+    padding: 5% 2%;
+  }
+
+  .education .container.left-container {
+    padding: 10px 40px 10px 0px;
+  }
+
+  .education .container.right-container {
+    padding: 10px 0px 10px 40px;
   }
 }
 
@@ -109,12 +138,49 @@
   .home-left h1 {
     font-size: 28px;
   }
-  .home-left span{
+
+  .home-left span {
     display: block;
   }
-  .about p {
-    text-align: left;
+
+  .about {
+    text-align: justify;
+    padding: 5% 1%;
+
   }
+
+  .about .about-content {
+    width: 90%;
+  }
+
+  .about p {
+    text-align: center;
+  }
+
+  .skills {
+    padding: 5% 1%;
+  }
+
+  .skills .tab-header {
+    background-color: var(--bg-dark);
+    font-size: 14px;
+    padding: 5px;
+    border-bottom: 2px solid var(--bg-light);
+  }
+
+  .tab-body .skill {
+    min-width: 55px;
+    min-height: 43px;
+    padding: 1px;
+    font-size: 10px;
+    margin: 3px;
+  }
+
+  .tab-body .skill .icon {
+    font-size: 20px;
+    padding: 4px 1px;
+  }
+
   .education {
     padding: 5%;
   }
@@ -130,25 +196,11 @@
   .education .container.left-container {
     left: 0;
     padding: 10px 2px 10px 40px;
-    
   }
 
   .education .container.right-container {
     left: 0;
     padding: 10px 2px 10px 40px;
-  }
-  .education .container .text-box {
-    background-color: var(--bg-light);
-    /* margin: 10px 20px; */
-    padding: 20px;
-    position: relative;
-    overflow: visible;
-
-    /* border: 2px solid var(--primary-color); */
-    border: double 3px transparent;
-    border-radius: 8px;
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
   }
 
   .education .right-container .circle,
@@ -168,31 +220,6 @@
     border-left: 15px solid transparent;
     border-right: 15px solid var(--bg-light);
   }
-  .skills {
-    padding: 5% 1%;
-  }
-  .skills .tab-header {
-    background-color: var(--bg-dark);
-    font-size: 14px;
-    padding: 5px;
-    border-bottom: 2px solid var(--bg-light);
-
-  }
-
-  .tab-body .skill{
-    min-width: 55px;
-    min-height: 43px;
-    padding: 1px;
-    font-size: 10px;
-    margin: 3px;
-
-  }
-  .tab-body .skill .icon{
-    /* background-color: chocolate; */
-    font-size: 20px;
-    width: 25px;
-    padding: 4px 1px;
-  }
 }
 
 /* smallest breakpoint */
@@ -200,33 +227,34 @@
   body {
     overflow: auto;
   }
-  .home-right button{
+
+  .home-right button {
     width: 180px;
   }
-  .text-box h1{
+
+  .text-box h1 {
     font-size: 26px;
     overflow: auto;
   }
+
   .skills .tab-header {
     font-size: 15px;
     flex-wrap: wrap;
   }
-  .skills .tab-header  .tab{
-    flex-basis: 40%;
-  }
-  .skills .container{
+
+  .skills .container {
     padding: 5px;
   }
-  .tab-body .skill{
+
+  .tab-body .skill {
     min-width: 40px;
     min-height: 40px;
     padding: 0px 2px;
     margin: 2px;
     font-size: 8px;
   }
-  .tab-body .skill .icon{
+
+  .tab-body .skill .icon {
     font-size: 18px;
-    width: 25px;
-    padding: 4px 1px;
   }
 }

@@ -1,44 +1,37 @@
 .skills {
     background-color: var(--bg-light);
-    color: white;
     padding: 5% 8%;
 }
 .skills .tab-header{
     position: relative;
     width: 80%;
-    background-color: var(--bg-dark);
     margin: 5px auto;
     padding: 5px 10px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    box-sizing: border-box;
     flex-wrap: nowrap;
+    background-color: var(--bg-dark);
+    color: white;
     /* border: 1px solid green; */
 }
 .skills .tab-header .tab{
     flex-basis: 100%;
-    padding: 12px 4px ;
-    margin: 0 2px;
-    border: 2px solid var(--bg-dark);
-    background: var(--bg-dark);
+    padding: 12px 4px;
+    margin: 4px;
     cursor: pointer;
     border-radius: 8px;
     text-align: center;
+    font-weight: bolder;
     background: var(--bg-light);
-
 }
 .skills .tab-header .tab:hover, .skills .tab-header .tab:active{
-    color: var(--primary-color);
-
+    /* color: var(--primary-color); */
+    background-color: var(--primary-light);
 }
-/* .skills .tab-header .tab:nth-child(3){
-    background-color: var(--bg-light);
-    color: var(--primary-color);
-} */
 .skills .tab-header .tab.selected-tab{
     background-color: var(--primary-light);
     color: var(--primary-color);
-    /* border: 2px solid pink; */
 }
 .skills .container{
     width: 80%;
@@ -50,6 +43,8 @@
 }
 .skills .tab-body{
     display: none;
+    text-align: center;
+    color: white;
 }
 .skills .tab-body:first-child{
     display: block;
@@ -61,31 +56,27 @@
     flex-wrap: wrap;
     /* border: 1px solid  cadetblue; */
 }
-/* .tab-body h1{
-    display: block;
-    flex-basis: 100%;
-} */
+.tab-body p{
+    margin-bottom: 10px;
+}
 .tab-body .skill{
     min-width: 60px;
     min-height: 50px;
     margin: 6px;
     padding: 5px;
+    font-size: 12px;
     text-align: center;
     border-radius: 5px;
-    background-color: var(--bg-dark);
     display: block;
-    /* color: var(--primary-color); */
     color: white;
-    box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.5);
-    font-size: 12px;
+    background-color: var(--bg-dark);
     border: 3px solid var(--bg-light);
-    
+    box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.5);
 }
 .tab-body .skill:hover{
     background-color: var(--bg-light);
 }
 .tab-body .skill .icon{
-    /* background-color: chocolate; */
     font-size: 22px;
     width: 25px;
     padding: 4px 1px;

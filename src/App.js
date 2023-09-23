@@ -11,8 +11,8 @@ function App() {
     <div className="App">
       <Home/>
       <About/>
-      <Education/>
       <Skills/>
+      <Education/>
       <Projects/>
       <Contact/>
 
@@ -24,8 +24,8 @@ function App() {
     {/* add logo */}
     {/* add loader component */}
     {/* add scroll to top component */}
-    {/* add toggle mode component */}
-    
+    {/* add toggle dark/light mode component */}
+    {/* add text effect on my name which i have seen on insta that random words coming then actual words showing*/}
 
     </div>
   );

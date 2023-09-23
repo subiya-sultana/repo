@@ -1,36 +1,64 @@
-/* about css */
 .about{
-   /* position: absolute; */
    background-color:  var(--bg-light);
    display: block;
    color: white;
-   text-align: center;
+   text-align: justify;
    padding: 5% 8%;
+   padding-bottom: 10px;
    z-index: 5;
-   /* border: 2px solid hotpink; */
+}
+.about .about-content{
+   margin: auto;
+   width: 80%;
 }
 .about p{
-   margin: 4px;
+   margin: 8px 0;
 }
-.about p:hover{
-/* background: rgba(255, 255, 255, 0.1);
+.about .moreText{
+   display: none;
+}
+.about .ReadMoreBtn{
+   cursor: pointer;
+   color: var(--primary-color);
+   position: relative;
+   padding: 3px 0;
+}
+.about .ReadMoreBtn::before {
+   content: ""; 
+   position: absolute;
+   width: 100%;
+   height: 2px;
+   bottom: 0;
+   background-color: var(--primary-color);
+   visibility: hidden;
+   transform: scaleX(0);
+   transition: all 0.5s ease-in-out 0s; 
+}   
+.about .ReadMoreBtn:hover{
+   transition: 2s;
+   color: var(--primary-light);
+}
+.about .ReadMoreBtn:hover::before {
+   visibility: visible;
+   -webkit-transform: scaleX(1);
+   transform: scaleX(1);
+   background-color: var(--primary-light);
+}   
+.about #readLess{
+   display: none;
+}
+.about .icon{
+   position: absolute;
+   top: 7px;
+   right: -17px;
+}
+
+
+/* .about p:hover{
+background: rgba(255, 255, 255, 0.1);
 border-radius: 15px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(15px);
 -webkit-backdrop-filter: blur(15px);
-border: 1px solid rgba(255, 255, 255, 0.1); */
-}
-
-
-.btn{
-width: 220px;
-padding: 8px;
-margin: 8px;
-font-size: 16px;
-font-weight: 700;
-cursor: pointer;
-color: var(--secondary-color);
-/* background-color: #00ff00; */
-background-color: #ff0000;
-border: none;
-}
+border: 1px solid rgba(255, 255, 255, 0.1);
+} */

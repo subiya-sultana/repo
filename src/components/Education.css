@@ -66,17 +66,8 @@
   overflow: visible;
   border-radius: 8px;
   background-origin: border-box;
-}
-.education .text-box:after {
-  position: absolute;
-  content: '';
-  width: 99%;
-  height: 100%; 
-  top: 0;
-  left:0;
-  border-radius: 8px;
-  box-shadow: 1px 0px 10px 3px var(--primary-light);
-  z-index: -1;
+  box-shadow: 1px 0px 10px 0px rgba(0, 0, 0);
+  /* box-shadow: 1px 0px 10px 0px var(--primary-light); */
 }
 .education .text-box small{
   color: var(--primary-color);

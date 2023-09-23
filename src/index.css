@@ -26,4 +26,6 @@
   /* overflow-x: hidden; */
   /* outline: 2px solid red; */
 }
-
+.body{
+  background-color: var(--bg-light);
+}

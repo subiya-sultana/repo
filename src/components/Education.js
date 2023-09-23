@@ -12,9 +12,9 @@ export default function Education() {
             <small>2023 - present </small>
             <h1>Engineering</h1>
             <p className='text-style'>
-            College: ISL Engineering college in Hyderabad, Telangana.<br/> 
-            Course: Artificial intelligence and data science. <br/> 
-            Board: Osmania University. <br/> 
+            <strong>College:</strong> ISL Engineering college in Hyderabad, Telangana.<br/> 
+            <strong>Course:</strong> Artificial intelligence and data science. <br/> 
+            <strong>Board:</strong> Osmania University. <br/> 
             </p>
             <span className='left-container-arrow'></span>
           </div>
@@ -25,10 +25,10 @@ export default function Education() {
           <small>2020 - 2023 (3 years)</small>
             <h1>Diploma</h1>
             <p className='text-style'>
-            College: Quli Qutub Shah Government Polytechnic in Hyderabad, Telangana.<br/> 
-            Course: Computer science<br/> 
-            Board: SBTET <br/> 
-            GPA: 9.32%<br/> 
+            <strong>College:</strong> Quli Qutub Shah Government Polytechnic in Hyderabad, Telangana.<br/> 
+            <strong>Course:</strong> Computer science<br/> 
+            <strong>Board:</strong> SBTET <br/> 
+            <strong>GPA:</strong> 9.32%<br/> 
             </p>
             <span className='right-container-arrow'></span>
           </div>
@@ -39,9 +39,9 @@ export default function Education() {
           <small>June 2022 - November 2022 (6 months)</small>
             <h1>Industrial Training</h1>
             <p className='text-style'>
-            Company: Industech Solutions in koti, Hyderabad, Telangana.<br/> 
-            Course: Web development <br/> 
-            Worked on: Full stack website using php<br/> 
+            <strong>Company:</strong> Industech Solutions in koti, Hyderabad, Telangana.<br/> 
+            <strong>Course:</strong> Web development <br/> 
+            <strong>Worked on:</strong> Full stack website using php.<br/> 
             </p>
           
             <span className='left-container-arrow'></span>
@@ -53,9 +53,9 @@ export default function Education() {
           <small>2019 - 2020 (Passed year)</small>
             <h1>High School</h1>
             <p className='text-style'>
-            School: Adams High School in Hyderabad, Telangana.<br/> 
-            Board: SSC <br/> 
-            GPA: 9.2%<br/> 
+            <strong>School:</strong> Adams High School in Hyderabad, Telangana.<br/> 
+            <strong>Board:</strong> SSC <br/> 
+            <strong>GPA:</strong> 9.2%<br/> 
             </p>
             <span className='right-container-arrow'></span>
           </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import homeBg from '../assets/homeBg.mp4';
+import bgPosterImg from "../assets/bgPosterImg.PNG"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
@@ -7,7 +8,7 @@ import { faArrowRight, faAngleDown } from '@fortawesome/free-solid-svg-icons';
 export default function Home() {
   return (
     <header className="App-header">
-        <video autoPlay muted loop src={homeBg} type="video/mp4"/>
+        <video autoPlay muted loop src={homeBg} poster={bgPosterImg} type="video/mp4"/>
         <div className="overlay"></div>
         <div className="home-content" >
             <div className='home-left' data-aos="fade-down-right" data-aos-duration="2000"> 

@@ -74,6 +74,13 @@
   .education {
     padding: 5% 4%;
   }
+  .projects .project-container{
+    justify-content: space-around;
+  }
+  .project-container .myProject{
+    flex-basis: 46%;
+    margin-bottom: 25px;
+  }
 }
 
 /* Media Query for low resolution  Tablets, Ipads */
@@ -107,6 +114,7 @@
   .about .about-content {
     width: 90%;
   }
+  
 
   .skills {
     padding: 5% 2%;
@@ -131,6 +139,10 @@
   .education .container.right-container {
     padding: 10px 0px 10px 40px;
   }
+  .projects {
+    padding: 5% 3%;
+  }
+ 
 }
 
 /* Media Query for Mobile Devices */
@@ -153,10 +165,10 @@
     width: 90%;
   }
 
-  .about p {
+  .about .about-content{
     text-align: center;
   }
-
+  
   .skills {
     padding: 5% 1%;
   }
@@ -220,6 +232,25 @@
     border-left: 15px solid transparent;
     border-right: 15px solid var(--bg-light);
   }
+  .projects {
+    padding: 5% 8%;
+  }
+  .project-container .myProject{
+    flex-basis: 90%;
+  }
+  .myProject-desc h3{
+    font-size: 18px;
+  }
+  .myProject-desc .tech-stack{
+    margin-bottom: 1px;
+  }
+  .myProject-desc .project-links {
+    margin: 0px 5px;
+  }
+  .myProject-desc .project-links button {
+    padding: 5px;
+    margin: 5px;
+  }
 }
 
 /* smallest breakpoint */
@@ -256,5 +287,22 @@
 
   .tab-body .skill .icon {
     font-size: 18px;
+  }
+  .projects {
+    padding: 5% 8%;
+  }
+  .project-container .myProject{
+    flex-basis: 100%;
+  }
+  .myProject .myProject-desc{
+    padding: 5px 0;
+    padding-bottom: 75px;
+  }
+  .myProject-desc h3{
+    font-size: 14px;
+  }
+  .myProject-desc .project-links {
+    position: absolute;
+    bottom: 2px;
   }
 }

@@ -22,6 +22,7 @@
    color: var(--primary-color);
    position: relative;
    padding: 3px 0;
+   text-align: center;
 }
 .about .ReadMoreBtn::before {
    content: ""; 
@@ -50,7 +51,7 @@
 .about .icon{
    position: absolute;
    top: 7px;
-   right: -17px;
+   left: 82px;
 }
 
 

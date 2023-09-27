@@ -64,7 +64,7 @@
   padding: 20px;
   position: relative;
   overflow: visible;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   background-origin: border-box;
   box-shadow: 1px 0px 10px 0px rgba(0, 0, 0);
   /* box-shadow: 1px 0px 10px 0px var(--primary-light); */

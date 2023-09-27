@@ -45,19 +45,23 @@ export default function About() {
         </p>
 
         <div className="moreText">
-          <p className="text-style">
-            When I'm not immersed in the world of web development, you can find me
-            exploring new hobbies, reading suspense/thriller novels, hanging out
-            with my family and close friends, drawing, journaling, or watching the
-            John Wick movie series for the 50th time.
-          </p>
+          
           <p className="text-style" >
             Whether it's designing user-friendly interfaces or writing clean and
             efficient code, I thrive on the challenge of creating digital
             experiences that are both visually appealing and highly functional. With
             a strong emphasis on 'progressive enhancement', I look for creative ways
             to push the boundaries of website code without compromising on browser
-            support and performance. I'm eager to connect with fellow developers,
+            support and performance. 
+          </p>
+          <p className="text-style">
+            When I'm not immersed in the world of web development, you can find me
+            exploring new hobbies, reading suspense/thriller novels, hanging out
+            with my family and close friends, drawing, journaling, or watching the
+            John Wick movie series for the 50th time.
+          </p>
+          <p className="text-style">
+            I'm eager to connect with fellow developers,
             designers, and anyone who shares a passion for technology and
             creativity. Let's collaborate, learn, and build a better digital world
             together.

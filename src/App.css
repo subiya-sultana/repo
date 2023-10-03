@@ -5,6 +5,7 @@
 @import "./components/Skills.css";
 @import "./components/Projects.css";
 @import "./components/Contact.css";
+@import "./components/Footer.css";
 
 
 .sub-title {
@@ -26,7 +27,7 @@
 .text-style {
   overflow: hidden;
   line-height: 24px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 /* Text glich effect */
@@ -154,19 +155,9 @@
   .home-left span {
     display: block;
   }
-
-  .about {
-    text-align: justify;
-    padding: 5% 1%;
-
-  }
-
   .about .about-content {
-    width: 90%;
-  }
-
-  .about .about-content{
     text-align: center;
+    width: 95%;
   }
   
   .skills {

@@ -60,14 +60,20 @@
   padding: 10px 34px;
 }
 .education .container .text-box{
-  background-color: var(--bg-light);
+  background: linear-gradient(to bottom right, var(--bg-lighter),var(--bg-lighter), var(--bg-light));
   padding: 20px;
   position: relative;
   overflow: visible;
+  cursor: pointer;
   /* border-radius: 8px; */
   background-origin: border-box;
-  box-shadow: 1px 0px 10px 0px rgba(0, 0, 0);
+  box-shadow: 1px 0px 10px 0px rgba(0, 0, 0,0.8);
   /* box-shadow: 1px 0px 10px 0px var(--primary-light); */
+}
+.education .container .text-box:hover{
+  transition: 0.5s;
+  transform: translateY(-5px) !important;
+  box-shadow: 1px 0px 10px 0px rgba(0, 0, 0);
 }
 .education .text-box small{
   color: var(--primary-color);
@@ -83,7 +89,7 @@
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
   border-right: 15px solid transparent;
-  border-left: 15px solid var(--bg-light);
+  border-left: 15px solid var(--bg-lighter);
 }
 .education .right-container-arrow{
   position: absolute;
@@ -93,6 +99,6 @@
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
   border-left: 15px solid transparent;
-  border-right: 15px solid var(--bg-light);
+  border-right: 15px solid var(--bg-lighter);
 }
 

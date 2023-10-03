@@ -10,7 +10,7 @@ const Projects = () => {
             <pre className="sub-title"> &lt; Projects /&gt; </pre>
             <h1 className="glitch title">WHAT I BUILT?</h1>
             <div className="project-container">
-                <div className='myProject'>
+                <div className='myProject' data-aos="zoom-in" data-aos-duration="1500">
                     <div className='img-container'>
                         <img src={cardImg} alt="projectImg"/>
                     </div> 
@@ -29,7 +29,7 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-                <div className='myProject'>
+                <div className='myProject' data-aos="zoom-in" data-aos-duration="1500">
                     <div className='img-container'>
                         <img src={cardImg} alt="projectImg"/>
                     </div> 
@@ -48,7 +48,7 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-                <div className='myProject'>
+                <div className='myProject' data-aos="zoom-in" data-aos-duration="1500">
                     <div className='img-container'>
                         <img src={cardImg} alt="projectImg"/>
                     </div> 
@@ -73,7 +73,7 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-                <div className='myProject'>
+                <div className='myProject' data-aos="zoom-in" data-aos-duration="1500">
                     <div className='img-container'>
                         <img src={cardImg} alt="projectImg"/>
                     </div> 
@@ -93,7 +93,7 @@ const Projects = () => {
                     </div>
                 </div>
                 
-                <div className='myProject'>
+                <div className='myProject' data-aos="zoom-in" data-aos-duration="1500">
                     <div className='img-container'>
                         <img src={cardImg2} alt="projectImg"/>
                     </div> 

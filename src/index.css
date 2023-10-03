@@ -8,17 +8,20 @@
 
   --secondary-color: #f57c03;
 
-  --bg-light: #0e1f17;
+  /* --bg-light: #0e1f17; */
+  --bg-light: #152e22;
+  --bg-lighter: #1c3c2c; 
+
   --bg-dark: #08120d;
-   /* background-color:  #1c3c2c; */
-   /* background-color: #12271c; */
-   /* background-color:  #0e1f17; */
-   /* background-color:  #152e22; */
-   /* background-color: #08120d; */
+  --bg-darker: #060e0a;
+  /* --bg-lighter: #152e22; */
+  /* --bg-lighter: #12271c; */
+  
 }
 *{
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
   font-family: monospace,'Courier New', Courier;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -28,4 +31,9 @@
 }
 .body{
   background-color: var(--bg-light);
+}
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }

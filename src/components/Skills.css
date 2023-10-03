@@ -23,14 +23,14 @@
     border-radius: 8px;
     text-align: center;
     font-weight: bolder;
-    background: var(--bg-light);
+    background: linear-gradient(to right, var(--bg-light),var(--bg-lighter), var(--bg-light));
 }
 .skills .tab-header .tab:hover, .skills .tab-header .tab:active{
     /* color: var(--primary-color); */
-    background-color: var(--primary-light);
+    background: var(--primary-light);
 }
 .skills .tab-header .tab.selected-tab{
-    background-color: var(--primary-light);
+    background: var(--primary-light);
     color: var(--primary-color);
 }
 .skills .container{

@@ -5,6 +5,7 @@ import Education from './components/Education';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -15,11 +16,11 @@ function App() {
       <Education/>
       <Projects/>
       <Contact/>
+      <Footer/>
 
     {/* add navbar component */}
     {/* add Experience component */}
     {/* add testimonial component */}
-    {/* add footer component */}
 
     {/* add logo */}
     {/* add loader component */}

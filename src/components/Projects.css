@@ -89,15 +89,17 @@
     background-color: var(--bg-dark);
     border: 2px solid var(--primary-light);
     box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    transition: 0.75s;
+
 }
 .myProject-desc .project-links button:hover{
     color: white;
     background-color: var(--primary-color);
-    transition-delay: 0.4s;
-    transition: 0.75s;
 }
 .myProject-desc .project-links button:hover .icon{
     transform: rotate(-30deg);
-    transition: 0.75s;
+    transition: 0.5s;
+    color: white;
+
     /* transition-delay: 0.1s; */
 }

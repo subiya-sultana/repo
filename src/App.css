@@ -143,7 +143,9 @@
   .projects {
     padding: 5% 3%;
   }
- 
+  .contact .right-container form{
+    width: 80%;
+  }
 }
 
 /* Media Query for Mobile Devices */
@@ -241,6 +243,30 @@
   .myProject-desc .project-links button {
     padding: 5px;
     margin: 5px;
+  }
+  .contact .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact .left-container{
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5px;
+
+  }
+  .contact .right-container{
+    width: 100%;
+  }
+  .contact .right-container form{
+    width: 100%;
+    margin-bottom: 10px;
+
+  }
+  .contact form #submit{
+    width: 100%;
   }
 }
 

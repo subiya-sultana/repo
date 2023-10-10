@@ -70,5 +70,10 @@
     display: none;
 }
 .contact form #submit{
-    
+    color: var(--primary-color);
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+.contact form #submit:hover{
+    opacity: 0.8;
 }

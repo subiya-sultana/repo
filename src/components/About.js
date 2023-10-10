@@ -54,12 +54,12 @@ export default function About() {
             to push the boundaries of website code without compromising on browser
             support and performance. 
           </p>
-          <p className="text-style">
+          {/* <p className="text-style">
             When I'm not immersed in the world of web development, you can find me
             exploring new hobbies, reading suspense/thriller novels, hanging out
             with my family and close friends, drawing, journaling, or watching the
             John Wick movie series for the 50th time.
-          </p>
+          </p> */}
           <p className="text-style">
             I'm eager to connect with fellow developers,
             designers, and anyone who shares a passion for technology and

@@ -23,10 +23,10 @@ const Contact = () => {
                 </div>
                 <div className='right-container'>
                     <form action="https://formspree.io/f/mdorpljg" method="post" onsubmit="showModal(); return false;">
-                        <input type="text" id="name" name="name" required placeholder='Full Name'/>
-                        <input type="email" id="email" name="email" required placeholder='Email'/>
+                        <input type="text" id="name" name="name" required placeholder='Enter Full Name'/>
+                        <input type="email" id="email" name="email" required placeholder='Your Email'/>
                         <textarea id="message" name="message" required placeholder='Type your message here.....' rows="8" ></textarea>
-                        <input id="submit" type="submit" value="Submit"></input>
+                        <input id="submit" type="submit" value="Send Message!"></input>
                     </form>
                 </div>
             </div>

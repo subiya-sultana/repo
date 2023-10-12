@@ -27,7 +27,7 @@ export default function About() {
 
   }
   return (
-    <div className="about">
+    <div className="about" id="about">
       <pre className="sub-title"> &lt; About /&gt; </pre>
       <h1 className="glitch title">WHO I AM?</h1>
       <div className="about-content">

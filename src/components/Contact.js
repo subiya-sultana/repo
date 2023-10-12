@@ -5,7 +5,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Contact = () => {
     return (
-        <div className='contact'>
+        <div className='contact' id='contact'>
             <div className='arrow'> </div>
             <pre className='sub-title'>&lt; Contact /&gt;</pre>
             <h1 className='glitch title'>WAYS TO CONTACT ME?</h1>

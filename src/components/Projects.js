@@ -6,7 +6,7 @@ import cardImg2 from "../assets/education inspirastion.PNG";
 
 const Projects = () => {
     return (
-        <div className='projects'>
+        <div className='projects' id="projects">
             <pre className="sub-title"> &lt; Projects /&gt; </pre>
             <h1 className="glitch title">WHAT I BUILT?</h1>
             <div className="project-container">

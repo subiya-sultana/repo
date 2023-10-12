@@ -1,31 +1,85 @@
 nav {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: max-content;
-    display: block;
-    padding: 8px 30px;
+    background-color: black;
+    background-color: var(--secondary-color);
+    box-sizing: border-box;
+    /* width: 280px; */
+    padding: 0 10px;
     z-index: 2;
     position: fixed;
     left: 50%;
+    bottom: 15px;
     transform: translateX(-50%);
-    bottom: 2rem;
-    display: flex;
-    gap: 5px;
-    border-radius: 50px;
-    backdrop-filter: blur(15px);
-}
-nav a{
-    background: transparent;
-    padding: 10px;
-    border-radius: 50%;
-    display: flex;
-    color:lavender;
+    
+
+    border-radius: 10px;
+    /* gap: 5px; */
 
 }
-nav a:hover{
-    background: rgba(0 , 0 , 0 , 0.3)
+nav ul{
+    display: flex;
+    justify-content: center;
 }
-
-nav a.active{
-    background-color: rgba(0 , 0 , 0 , 0.6);
+nav ul li{
+    color: darkcyan;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+nav ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 60px;
+    height: 50px;
+    /* border: 1px solid burlywood; */
+}
+nav ul li a span.icon{
+    position: relative;
+    display: block;
+    text-align: center;
+    line-height: 70px;
     color: white;
+    transition: ease-out 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(50px);
+    border-radius: 50%;
 }
+nav ul li.active a span.icon{
+    transform: translateY(-30px);
+    color: #29fd53;
+    background-color: transparent;
+    width: 70%;
+    height: 100%;
+    
+    text-align: center;
+    border: 5px solid #29fd53;
+}
+nav ul li a span.text{
+    letter-spacing: -1.5px; 
+    position: absolute;
+    transition:ease-out 0.5s;
+    opacity: 0;
+    transform: translateY(10px);
+    color: #29fd53;
+}
+nav ul li.active a span.text{
+    opacity: 1;
+}
+/* .marker{
+    box-sizing: border-box;
+    width: 70px;
+    height: 70px;
+    background-color: #29fd53;
+    border: 6px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: -30px;
+    transition: 0.5s;
+} */

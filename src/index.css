@@ -1,12 +1,17 @@
 
 :root{
-  /* --primary-color:  #12ffac; */
-  /* --primary-color:  #5f6; */
-  /* --primary-color: #00ec00; */
-  --primary-color: #00ff00;
-  --primary-light: #00ff0060;
+  /* --primary-color:  #12ffac ; */
+  --primary-color:  #5f6;
+  --primary-light: #57ff684d;
 
-  --secondary-color: #f57c03;
+  /* --primary-color: #00ec00; */
+  
+  /* --primary-color: #00ff00; */
+  /* --primary-light: #00ff0060; */
+
+  /* --secondary-color: #f57c03; */
+  --secondary-color: #f5cd03;
+
 
   /* --bg-light: #0e1f17; */
   --bg-light: #152e22;

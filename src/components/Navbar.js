@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faUser, faCode, faPhoneVolume, faLaptopCode, faGraduationCap} from '@fortawesome/free-solid-svg-icons';
+import { faHome, faUser, faPhoneVolume, faLaptopCode, faGraduationCap} from '@fortawesome/free-solid-svg-icons';
 export default function Navbars() {
   useEffect(() => {
     const listItems = document.querySelectorAll('.list');
@@ -18,7 +18,7 @@ export default function Navbars() {
     <nav>
       <ul>
         <li className='list active'>
-          <a href='#'>
+          <a href='#home'>
             <span className='icon'>
               <FontAwesomeIcon  icon={faHome} />
             </span>

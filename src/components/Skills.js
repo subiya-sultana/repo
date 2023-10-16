@@ -18,7 +18,7 @@ const Skills = () => {
         event.currentTarget.className += " selected-tab";
     }
     return (
-        <div className='skills'>
+        <div className='skills section' id='skills'>
             <pre className='sub-title'>&lt; Skills /&gt;</pre>
             <h1 className='glitch title'>WHAT I USE?</h1>
 

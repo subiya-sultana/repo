@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Education() {
   return (
-    <div className='education' id='education'>
+    <div className='education section' id='education'>
       <pre className='sub-title'>&lt; Education /&gt;</pre>
       <h1 className='glitch title'>WHAT I STUDY?</h1>
       <div className='timeline' >

@@ -1,64 +1,78 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faUser, faPhoneVolume, faLaptopCode, faGraduationCap} from '@fortawesome/free-solid-svg-icons';
-export default function Navbars() {
+
+const Navbar = () => {
+  const [activeSection, setActiveSection] = useState('home');
+
   useEffect(() => {
-    const listItems = document.querySelectorAll('.list');
-    function handleItemClick(event) {
-      listItems.forEach(item => item.classList.remove('active'));
-      event.currentTarget.classList.add('active');
-    }
-    listItems.forEach(item => item.addEventListener('click', handleItemClick));
-    return () => {
-      listItems.forEach(item => item.removeEventListener('click', handleItemClick));
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const sections = ['home', 'about', 'skills', 'education', 'projects', 'contact'];
+      for (const section of sections) {
+        const element = document.getElementById(section);
+        if (element) {
+          const offset = element.offsetTop - 150;
+          const height = element.offsetHeight;
+
+          if (scrollY >= offset && scrollY < offset + height) {
+            setActiveSection(section);
+            break;
+          }
+        }
+      }
     };
-  }, []); 
+
+    // Attaching scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Removing scroll event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <nav>
-      <ul>
-        <li className='list active'>
-          <a href='#home'>
-            <span className='icon'>
-              <FontAwesomeIcon  icon={faHome} />
-            </span>
-            <span className='text'>Home</span>
-          </a>
-        </li>
-        <li className='list'>
-          <a href='#about'>
-            <span className='icon'>
-              <FontAwesomeIcon icon={faUser} />
-            </span>
-            <span className='text'>About</span>
-          </a>
-        </li>
-        <li className='list'>
-          <a href='#education'>
-            <span className='icon'>
-              <FontAwesomeIcon icon={faGraduationCap} />
-            </span>
-            <span className='text'>Education</span>
-          </a>
-        </li>
-        <li className='list'>
-          <a href='#projects' >
-            <span className='icon' >
-              <FontAwesomeIcon icon={faLaptopCode} />
-            </span>
-            <span className='text'>Projects</span>
-          </a>
-        </li>
-        <li className='list'>
-          <a href='#contact'>
-            <span className='icon' >
-              <FontAwesomeIcon icon={faPhoneVolume} />
-            </span>
-            <span className='text'>Contact </span>
-          </a>
-        </li>  
-        {/* <div className='marker'></div> */}
-      </ul>        
+      <Link to="home" smooth={true} duration={500} spy={true}  activeClass={activeSection === 'home' ? 'active' : ''}>
+        <span className='icon'>
+          <FontAwesomeIcon  icon={faHome} />
+        </span>
+        <span className='text'>Home</span>
+      </Link>
+      <Link to="about" smooth={true} duration={500} spy={true} offset={20}  activeClass={activeSection === 'about' ? 'active' : ''}>
+      <span className='icon'>
+          <FontAwesomeIcon  icon={faUser} />
+        </span>
+        <span className='text'>About</span>
+      </Link>
+      {/* <Link to="skills" smooth={true} duration={500} spy={true} offset={-70} activeClass={activeSection === 'skills' ? 'active' : ''}>
+                <span className='icon'>
+          <FontAwesomeIcon  icon={faSkills} />
+        </span>
+        <span className='text'>Skills</span>
+      </Link> */}
+      <Link to="education" smooth={true} duration={500} spy={true} offset={-200} activeClass={activeSection === 'education' ? 'active' : ''}>
+        <span className='icon'>
+          <FontAwesomeIcon  icon={faGraduationCap} />
+        </span>
+        <span className='text'>Education</span>
+      </Link>
+      <Link to="projects" smooth={true} duration={500} spy={true} offset={-200} activeClass={activeSection === 'projects' ? 'active' : ''}>
+        <span className='icon'>
+          <FontAwesomeIcon  icon={faLaptopCode} />
+        </span>
+        <span className='text'>Projects</span>
+      </Link>
+      <Link to="contact" smooth={true} duration={500} spy={true} offset={-200} activeClass={activeSection === 'contact' ? 'active' : ''}>
+      <span className='icon'>
+          <FontAwesomeIcon  icon={faPhoneVolume} />
+        </span>
+        <span className='text'>Contact</span>
+      </Link>
     </nav>
-  )
-}
+  );
+};
+
+export default Navbar;

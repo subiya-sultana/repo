@@ -7,7 +7,7 @@ import { faArrowRight, faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home() {
   return (
-    <header className="App-header" id='home'>
+    <header className="App-header section" id='home'>
         <video autoPlay muted loop src={homeBg} poster={bgPosterImg} type="video/mp4"/>
         <div className="overlay"></div>
         <div className="home-content" >

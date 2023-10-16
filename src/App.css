@@ -17,7 +17,7 @@
 }
 
 .title {
-  padding: 5px 0 25px 0;
+  padding: 5px 0;
   color: var(--primary-color);
   text-align: center;
   width: fit-content;
@@ -274,6 +274,12 @@
 @media (max-width: 280px) {
   body {
     overflow: auto;
+  }
+  nav{
+    width: 100%;
+    bottom: 0;
+    border-radius: 0;
+    padding: 0 2px;
   }
 
   .home-right button {

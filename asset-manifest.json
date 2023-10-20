@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/repo/static/css/main.4bcf3915.css",
-    "main.js": "/repo/static/js/main.e5ce7f3e.js",
+    "main.css": "/repo/static/css/main.b4ddd2cb.css",
+    "main.js": "/repo/static/js/main.abb96f22.js",
     "static/js/787.128fc6e9.chunk.js": "/repo/static/js/787.128fc6e9.chunk.js",
     "static/media/homeBg.mp4": "/repo/static/media/homeBg.c706642876e0cd9d2d82.mp4",
     "static/media/logo inspiration.PNG": "/repo/static/media/logo inspiration.83a4392c5672fef5eb88.PNG",
     "static/media/bgPosterImg.PNG": "/repo/static/media/bgPosterImg.94fb5ad5dde619d9afcb.PNG",
     "static/media/education inspirastion.PNG": "/repo/static/media/education inspirastion.0e8fc99dac450b4f9c7d.PNG",
+    "static/media/SubiyaSultanaResume.pdf": "/repo/static/media/SubiyaSultanaResume.bb0fff849487eb6595f6.pdf",
     "index.html": "/repo/index.html",
-    "main.4bcf3915.css.map": "/repo/static/css/main.4bcf3915.css.map",
-    "main.e5ce7f3e.js.map": "/repo/static/js/main.e5ce7f3e.js.map",
+    "main.b4ddd2cb.css.map": "/repo/static/css/main.b4ddd2cb.css.map",
+    "main.abb96f22.js.map": "/repo/static/js/main.abb96f22.js.map",
     "787.128fc6e9.chunk.js.map": "/repo/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4bcf3915.css",
-    "static/js/main.e5ce7f3e.js"
+    "static/css/main.b4ddd2cb.css",
+    "static/js/main.abb96f22.js"
   ]
 }

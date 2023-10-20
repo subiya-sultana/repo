@@ -7,8 +7,8 @@ import cardImg2 from "../assets/education inspirastion.PNG";
 const Projects = () => {
     return (
         <div className='projects section' id="projects">
-            <pre className="sub-title"> &lt; Projects /&gt; </pre>
-            <h1 className="glitch title">WHAT I BUILT?</h1>
+            <pre className="sub-title" data-aos="fade-up"> &lt; Projects /&gt; </pre>
+            <h1 className="glitch title" data-aos="fade-up" data-aos-duration="1500">WHAT I BUILT?</h1>
             <div className="project-container">
                 <div className='myProject' data-aos="zoom-in" data-aos-duration="1500">
                     <div className='img-container'>

@@ -19,7 +19,7 @@ nav{
 nav a {
     position: relative;
     height: 50px;
-    width: 50px;
+    width: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,14 +47,15 @@ nav a.active span.icon{
     transform: translateY(-30px);
     color: #29fd53;
     background-color: transparent;
-    width: 80%;
+    width: 75%;
     height: 80%;
+    font-size: x-large;
     
     text-align: center;
     border: 5px solid #29fd53;
 }
 nav a span.text{
-    /* letter-spacing: -1.5px;  */
+    letter-spacing: -0.5px; 
     font-size: smaller;
     font-weight: bold;
     position: absolute;

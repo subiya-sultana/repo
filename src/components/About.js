@@ -28,9 +28,9 @@ export default function About() {
   }
   return (
     <div className="about section" id="about">
-      <pre className="sub-title"> &lt; About /&gt; </pre>
-      <h1 className="glitch title">WHO I AM?</h1>
-      <div className="about-content">
+      <pre className="sub-title" data-aos="fade-up" > &lt; About /&gt; </pre>
+      <h1 className="glitch title" data-aos="fade-up" data-aos-duration="1500">WHO I AM?</h1>
+      <div className="about-content" data-aos="fade-up" data-aos-duration="2500">
         <p className="text-style">
           I am a second-year student pursuing a degree in Artificial Intelligence
           and Data Science with a passion for web development.

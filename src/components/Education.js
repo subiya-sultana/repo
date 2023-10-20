@@ -3,8 +3,8 @@ import React from 'react'
 export default function Education() {
   return (
     <div className='education section' id='education'>
-      <pre className='sub-title'>&lt; Education /&gt;</pre>
-      <h1 className='glitch title'>WHAT I STUDY?</h1>
+      <pre className='sub-title' data-aos="fade-up">&lt; Education /&gt;</pre>
+      <h1 className='glitch title' data-aos="fade-up" data-aos-duration="1500">WHAT I STUDY?</h1>
       <div className='timeline' >
         <div className='container left-container' >
         <span className='circle'></span>
@@ -14,7 +14,7 @@ export default function Education() {
             <p className='text-style'>
             <strong>College:</strong> ISL Engineering college in Hyderabad, Telangana.<br/> 
             <strong>Course:</strong> Artificial intelligence and data science. <br/> 
-            <strong>Board:</strong> Osmania University. <br/> 
+            <strong>Affiliation:</strong> Osmania University. <br/> 
             </p>
             <span className='left-container-arrow'></span>
           </div>
@@ -40,7 +40,7 @@ export default function Education() {
             <h1>Industrial Training</h1>
             <p className='text-style'>
             <strong>Company:</strong> Industech Solutions in koti, Hyderabad, Telangana.<br/> 
-            <strong>Course:</strong> Web development <br/> 
+            <strong>Course:</strong> Application development <br/> 
             <strong>Worked on:</strong> Full stack website using php.<br/> 
             </p>
           

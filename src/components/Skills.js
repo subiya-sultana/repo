@@ -19,19 +19,18 @@ const Skills = () => {
     }
     return (
         <div className='skills section' id='skills'>
-            <pre className='sub-title'>&lt; Skills /&gt;</pre>
-            <h1 className='glitch title'>WHAT I USE?</h1>
+            <pre className='sub-title' data-aos="fade-up" >&lt; Skills /&gt;</pre>
+            <h1 className='glitch title' data-aos="fade-up" data-aos-duration="1500">WHAT I USE?</h1>
 
-            <div className='tab-header'>
+            <div className='tab-header' data-aos="fade-up" data-aos-duration="2000">
                 <div className='tab selected-tab' onClick={event => switchTab(event, 'frontend-body')}> Frontend </div>
                 <div className='tab' onClick={event => switchTab(event, 'backend-body')}> Backend </div>
                 <div className='tab' onClick={event => switchTab(event, 'other-body')}> Other </div>
             </div>
-            <div className='container'>
+            <div className='container' data-aos="fade-up" data-aos-duration="2000">
                 <div className='tab-body' id='frontend-body'>
                     <p>List of frontend technologies which I am familiar with:  </p>
                     <div className='skills-container'>
-
                         <div className='skill'>
                             <FontAwesomeIcon className='icon' icon={faHtml5} />
                             <p>HTML5</p>
@@ -68,13 +67,10 @@ const Skills = () => {
                             <FontAwesomeIcon className='icon' icon={faJs} />
                             <p>Next.Js</p>
                         </div>
-                        
-                        
                     </div>
-
                 </div>
                 <div className='tab-body' id='backend-body'>
-                <p>List of backend technologies which I am familiar with:</p>
+                    <p>List of backend technologies which I am familiar with:</p>
                     <div className='skills-container'>
                         <div className='skill'>
                             <FontAwesomeIcon className='icon' icon={faPhp} />

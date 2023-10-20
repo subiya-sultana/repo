@@ -7,9 +7,9 @@ const Contact = () => {
     return (
         <div className='contact section' id='contact'>
             <div className='arrow'> </div>
-            <pre className='sub-title'>&lt; Contact /&gt;</pre>
-            <h1 className='glitch title'>WAYS TO CONTACT ME?</h1>
-            <div className='container'>
+            <pre className='sub-title' data-aos="fade-up" >&lt; Contact /&gt;</pre>
+            <h1 className='glitch title' data-aos="fade-up" data-aos-duration="1500">WAYS TO CONTACT ME?</h1>
+            <div className='container' data-aos="flip-up" data-aos-duration="1500">
                 <div className='left-container'>
                     <a href="mailto:itsmesubiya@gmail.com" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon className='icon' icon={faEnvelope} />

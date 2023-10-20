@@ -6,13 +6,12 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import NavbarTop from './components/Navbar';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
-      <NavbarTop/>
-      {/* <Navbar/> */}
+      <Navbar/>
       <Home/>
       <About/>
       <Skills/>
@@ -21,15 +20,18 @@ function App() {
       <Contact/>
       <Footer/>
 
-    {/* add navbar component */}
     {/* add Experience component */}
     {/* add testimonial component */}
+    {/* services component */}
 
     {/* add logo */}
     {/* add loader component */}
-    {/* add scroll to top component */}
     {/* add toggle dark/light mode component */}
     {/* add text effect on my name which i have seen on insta that random words coming then actual words showing*/}
+    {/* change color theme */}
+    {/* Home page edit*/}
+    {/* check responsiveness of all components and clean the code befor finalizing  */}
+    {/* add resume */}
 
     </div>
   );

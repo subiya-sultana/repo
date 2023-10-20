@@ -51,11 +51,14 @@ video {
   display: inline-block;
 
 }
-.home-left p{
+.home-left .viewWork{
   margin-top: 40px;
-  padding: 10px;
-  color: var(--primary-color);
   cursor: pointer;
+}
+.home-left a{
+  padding: 10px;
+  text-decoration: none;
+  color: var(--primary-color);
 }
 .home-right{
   text-align: center;
@@ -72,6 +75,10 @@ video {
   color: var(--secondary-color);
   background-color: transparent;
   border: 2px solid var(--secondary-color);
+}
+.home-right button a{
+  text-decoration: none;
+  color: var(--secondary-color);
 }
 .home-right button:hover, .home-right button:active{
   color: white;
@@ -90,4 +97,5 @@ video {
   transform: rotate(90deg);
   transition: 0.75s;
 }
+
 

@@ -150,6 +150,11 @@
 
 /* Media Query for Mobile Devices */
 @media (max-width: 550px) {
+  nav{
+    /* width: 100%; */
+    bottom: 5px;
+  }
+
   .home-left h1 {
     font-size: 28px;
   }
@@ -243,6 +248,9 @@
   .myProject-desc .project-links button {
     padding: 5px;
     margin: 5px;
+  }
+  .contact{
+    min-height: 70vh;
   }
   .contact .container{
     display: flex;

@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/repo/static/css/main.bbafeb3c.css",
-    "main.js": "/repo/static/js/main.49ffe7e9.js",
+    "main.css": "/repo/static/css/main.434e054f.css",
+    "main.js": "/repo/static/js/main.9428b628.js",
     "static/js/787.128fc6e9.chunk.js": "/repo/static/js/787.128fc6e9.chunk.js",
     "static/media/homeBg.mp4": "/repo/static/media/homeBg.c706642876e0cd9d2d82.mp4",
+    "static/media/OrganizeU_video.mp4": "/repo/static/media/OrganizeU_video.bcc13a81b5959fdc83fe.mp4",
     "static/media/SDBMS.PNG": "/repo/static/media/SDBMS.b9baa85a50b1137341c4.PNG",
     "static/media/bgPosterImg.PNG": "/repo/static/media/bgPosterImg.94fb5ad5dde619d9afcb.PNG",
     "static/media/OrganizeU1.PNG": "/repo/static/media/OrganizeU1.330499d25921e5c57afa.PNG",
     "static/media/SubiyaSultanaResume.pdf": "/repo/static/media/SubiyaSultanaResume.bb0fff849487eb6595f6.pdf",
     "static/media/caseConvertor2.PNG": "/repo/static/media/caseConvertor2.99d728b67c9761532d40.PNG",
     "index.html": "/repo/index.html",
-    "main.bbafeb3c.css.map": "/repo/static/css/main.bbafeb3c.css.map",
-    "main.49ffe7e9.js.map": "/repo/static/js/main.49ffe7e9.js.map",
+    "main.434e054f.css.map": "/repo/static/css/main.434e054f.css.map",
+    "main.9428b628.js.map": "/repo/static/js/main.9428b628.js.map",
     "787.128fc6e9.chunk.js.map": "/repo/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bbafeb3c.css",
-    "static/js/main.49ffe7e9.js"
+    "static/css/main.434e054f.css",
+    "static/js/main.9428b628.js"
   ]
 }
